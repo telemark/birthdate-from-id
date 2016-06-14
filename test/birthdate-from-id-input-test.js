@@ -13,16 +13,16 @@ tap.throws(
 
 tap.throws(
   function () {
-    birthdateFromId(1234)
+    birthdateFromId(123)
   },
-  {message: 'Incorrect length. Must be 11 digits'},
-  'Too short. It requires input to be 11 digits.'
+  {message: 'Input must be 11 digits'},
+  'Too short. Input must be 11 digits'
 )
 
 tap.throws(
   function () {
-    birthdateFromId(1234567891011)
+    birthdateFromId(123456789101112)
   },
-  {message: 'Incorrect length. Must be 11 digits'},
-  'Too long. It requires input to be 11 digits.'
+  {message: 'Input must be 11 digits'},
+  'Too long. Input must be 11 digits'
 )

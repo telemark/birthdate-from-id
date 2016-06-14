@@ -1,22 +1,16 @@
 'use strict'
 
-function datePadding (date) {
-  var padded = date.toString()
-  if (padded.length === 1) {
-    padded = '0' + date.toString()
-  }
-  return padded
-}
+const datePadding = require('./lib/date-padding')
 
 module.exports = function birthdateFromId (id) {
   if (!id) {
     throw new Error('Missing required input')
   }
 
-  const personalid = id.replace(/\D+/, '').toString()
+  const personalid = id.toString().replace(/\D+/, '').toString()
 
-  if (!personalid.length === 11) {
-    throw new Error('Incorrect length. Must be 11 digits')
+  if (personalid.length !== 11) {
+    throw new Error('Input must be 11 digits')
   }
 
   const now = new Date()
