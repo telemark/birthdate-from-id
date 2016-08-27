@@ -1,6 +1,6 @@
 {
   "name": "birthdate-from-id",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Extract date of birth from personal ID number",
   "license": "MIT",
   "author": {
@@ -17,7 +17,7 @@
     "node": ">=4.5.0"
   },
   "scripts": {
-    "test": "standard && tap --reporter=spec test/*.js",
+    "test": "standard && nsp check && tap --reporter=spec test/*.js",
     "coverage": "tap test/*.js --coverage",
     "coveralls": "tap --cov --coverage-report=lcov test/*.js && cat coverage/lcov.info | coveralls",
     "setup": "npm install && node setup.js"
@@ -30,5 +30,8 @@
     "coveralls": "2.11.12",
     "standard": "8.0.0",
     "tap": "7.0.0"
+  },
+  "dependencies": {
+    "nsp": "2.6.1"
   }
 }
