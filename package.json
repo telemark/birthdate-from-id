@@ -1,6 +1,6 @@
 {
   "name": "birthdate-from-id",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Extract date of birth from personal ID number",
   "license": "MIT",
   "author": {
@@ -14,7 +14,7 @@
   "homepage": "https://github.com/telemark/birthdate-from-id",
   "main": "service.js",
   "engines": {
-    "node": ">=4.5.0"
+    "node": ">=4.6.2"
   },
   "scripts": {
     "test": "standard && nsp check && tap --reporter=spec test/*.js",
