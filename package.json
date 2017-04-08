@@ -1,6 +1,6 @@
 {
   "name": "birthdate-from-id",
-  "version": "1.0.12",
+  "version": "1.0.13",
   "description": "Extract date of birth from personal ID number",
   "license": "MIT",
   "author": {
@@ -29,8 +29,8 @@
   },
   "devDependencies": {
     "coveralls": "2.11.16",
-    "standard": "8.6.0",
-    "tap": "10.2.0",
     "nsp": "2.6.3"
+    "standard": "9.0.2",
+    "tap": "10.3.1",
   }
 }
