@@ -1,23 +1,33 @@
 'use strict'
 
+const isValid = require('is-valid-fodselsnummer')
 const datePadding = require('./lib/date-padding')
 
-module.exports = function birthdateFromId (id) {
+module.exports = id => {
   if (!id) {
     throw new Error('Missing required input')
   }
 
-  const personalid = id.toString().replace(/\D+/, '').toString()
+  let personalid = id.toString().replace(/\D+/, '').toString()
 
   if (personalid.length !== 11) {
     throw new Error('Input must be 11 digits')
   }
 
+  if (!isValid(personalid)) {
+    throw new Error('Id is invalid')
+  }
+
+  if (isValid(personalid, true) === 'D') {
+    const numStart = parseInt(personalid[0], 10) - 4
+    personalid = `${numStart}${personalid.substr(1, 10)}`
+  }
+
   const now = new Date()
   const personalYearEnd = parseInt(personalid.substr(4, 2), 10)
   const realYearEnd = parseInt(now.getFullYear().toString().substr(2, 2), 10)
-  var realYearStart = parseInt(now.getFullYear().toString().substr(0, 2), 10)
-  var birthYear
+  let realYearStart = parseInt(now.getFullYear().toString().substr(0, 2), 10)
+  let birthYear
 
   if (personalYearEnd > realYearEnd) {
     realYearStart--
