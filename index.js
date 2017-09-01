@@ -1,6 +1,5 @@
 'use strict'
 
-const isValid = require('is-valid-fodselsnummer')
 const datePadding = require('./lib/date-padding')
 
 module.exports = id => {
@@ -14,11 +13,7 @@ module.exports = id => {
     throw new Error('Input must be 11 digits')
   }
 
-  if (!isValid(personalid)) {
-    throw new Error('Id is invalid')
-  }
-
-  if (isValid(personalid, true) === 'D') {
+  if (parseInt(personalid[0], 10) > 3) {
     const numStart = parseInt(personalid[0], 10) - 4
     personalid = `${numStart}${personalid.substr(1, 10)}`
   }

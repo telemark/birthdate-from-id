@@ -7,7 +7,7 @@
 
 Extract date of birth from personal ID number (Norway).
 
-It supports fødselsnummer and D-nummer
+It supports fødselsnummer, D-nummer and VGO-nummer
 
 ## Usage
 
@@ -17,9 +17,11 @@ It supports fødselsnummer and D-nummer
 const birthdateFromId = require('birthdate-from-id')
 const fid = '01010750160'
 const did = '41085801188'
+const vid = '41085899108'
 
 console.log(birthdateFromId(fid)) //=> 2007-01-01
-console.log(birthdateFromId(did)) //=> 2007-01-01
+console.log(birthdateFromId(did)) //=> 1958-08-01
+console.log(birthdateFromId(vid)) //=> 1958-08-01
 ```
 
 ## License

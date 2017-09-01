@@ -6,3 +6,5 @@ const birthdateFromId = require('../index')
 tap.equal('2007-01-01', birthdateFromId('01010750160'), 'It returns expected result for F-number')
 
 tap.equal('1958-08-01', birthdateFromId('41085801188'), 'It returns expected result for D-number')
+
+tap.equal('1958-08-01', birthdateFromId('41085899108'), 'It returns expected result for VGO-number')
