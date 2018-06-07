@@ -1,7 +1,6 @@
-[![Build Status](https://travis-ci.org/telemark/birthdate-from-id.svg?branch=master)](https://travis-ci.org/telemark/birthdate-from-id)
+[![Build Status](https://travis-ci.com/telemark/birthdate-from-id.svg?branch=master)](https://travis-ci.com/telemark/birthdate-from-id)
 [![Coverage Status](https://coveralls.io/repos/telemark/birthdate-from-id/badge.svg?branch=master&service=github)](https://coveralls.io/github/telemark/birthdate-from-id?branch=master)
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](https://github.com/feross/standard)
-[![Greenkeeper badge](https://badges.greenkeeper.io/telemark/birthdate-from-id.svg)](https://greenkeeper.io/)
 
 # birthdate-from-id
 
@@ -11,9 +10,7 @@ It supports fødselsnummer, D-nummer and VGO-nummer
 
 ## Usage
 
-```javascript
-'use strict'
-
+```JavaScript
 const birthdateFromId = require('birthdate-from-id')
 const fid = '01010750160'
 const did = '41085801188'
