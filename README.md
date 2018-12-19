@@ -24,5 +24,3 @@ console.log(birthdateFromId(vid)) //=> 1958-08-01
 ## License
 
 [MIT](LICENSE)
-
-![Robohash image of birthdate-from-id](https://robots.kebabstudios.party/birthdate-from-id.png "Robohash image of birthdate-from-id")
