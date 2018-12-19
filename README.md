@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.com/telemark/birthdate-from-id.svg?branch=master)](https://travis-ci.com/telemark/birthdate-from-id)
+[![Build Status](https://travis-ci.org/telemark/birthdate-from-id.svg?branch=master)](https://travis-ci.org/telemark/birthdate-from-id)
 [![Coverage Status](https://coveralls.io/repos/telemark/birthdate-from-id/badge.svg?branch=master&service=github)](https://coveralls.io/github/telemark/birthdate-from-id?branch=master)
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](https://github.com/feross/standard)
 
