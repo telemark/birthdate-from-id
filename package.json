@@ -14,7 +14,7 @@
   "homepage": "https://github.com/telemark/birthdate-from-id",
   "main": "index.js",
   "engines": {
-    "node": ">=8.11.2"
+    "node": ">=10.14.2"
   },
   "scripts": {
     "test": "standard && nsp check && tap --reporter=spec test/*.js",
@@ -26,7 +26,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/telemark/birthdate-from-id.git"
+    "url": "git+https://github.com/telemark/birthdate-from-id.git"
   },
   "devDependencies": {
     "coveralls": "3.0.2",
