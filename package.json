@@ -29,8 +29,8 @@
     "url": "git+https://github.com/telemark/birthdate-from-id.git"
   },
   "devDependencies": {
-    "coveralls": "3.0.6",
+    "coveralls": "3.1.0",
     "standard": "15.0.1",
-    "tap": "14.6.4"
+    "tap": "14.10.8"
   }
 }
