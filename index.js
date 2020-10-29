@@ -22,13 +22,11 @@ module.exports = id => {
   const personalYearEnd = parseInt(personalid.substr(4, 2), 10)
   const realYearEnd = parseInt(now.getFullYear().toString().substr(2, 2), 10)
   let realYearStart = parseInt(now.getFullYear().toString().substr(0, 2), 10)
-  let birthYear
 
   if (personalYearEnd > realYearEnd) {
     realYearStart--
   }
 
-  birthYear = realYearStart.toString() + datePadding(personalYearEnd.toString())
-
+  const birthYear = realYearStart.toString() + datePadding(personalYearEnd.toString())
   return birthYear + '-' + personalid.substr(2, 2) + '-' + personalid.substr(0, 2)
 }
