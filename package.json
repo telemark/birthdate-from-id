@@ -1,6 +1,6 @@
 {
   "name": "birthdate-from-id",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "Extract date of birth from personal ID number",
   "license": "MIT",
   "author": {
